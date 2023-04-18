@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://spotme1.mysql.database.azure.com:3306/spotmedb
+    username: spotme
+    password: Admin123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+  
+    #   dialect : org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  tomcat:
+    max-http-form-post-size: 6291456
